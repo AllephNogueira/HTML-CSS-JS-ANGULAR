@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            text-align: center;
+        }
+
+        table thead th {
+            background-color: black;
+            color: white;
+            
+        }
+        
+        table tfoot td {
+            background-color: aliceblue;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(221, 221, 221);
+        }
+
+        table tbody tr:hover td {
+            background-color: rgb(134, 134, 134);
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <table width="300" align="center" cellspacing="0" cellpadding="5">
+        <caption>
+            Tabela de Aulas
+        </caption>
+
+        <thead>
+            <tr>
+                <th colspan="2"> <!-- Dizendo que aqui vai ocupar 2 colunas -->
+                    Tabela de Usuarios
+                </th>
+            </tr>
+            <tr>
+                <th title="Nome da materia">Materia</th>
+                <th title="Carga horaria">Carga</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>68</td>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>3</td>
+                <td>122</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
