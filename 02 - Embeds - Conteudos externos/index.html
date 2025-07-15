@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Embeds vs Iframes</h1>
+    <!-- EMBEDS -->
+        <!-- Embed usamos para arquivos externos, usamos para colocar por exemplo um video aqui .
+         Resumindo usamos o embed para incoporar arquivos externos em nosso site, mas o embed esta um pouco depreciado, podemos usar a tag VIDEO e IFRAME que funciona melhor.
+         
+         
+         Agora imagina que estamos fazendo um site, e vamos fazer ele de forma separada
+         Vamos criar 1 site para menu
+         1 site para topo
+         1 site para o meio 
+         
+         E com o embed podemos ter um site limpo, que somente vai receber esse outro quebra-cabeças
+         Para pode montar o nosso site.-->
+
+        <embed src="https://www.youtube.com/watch?v=RZAD3eJtBNE" width="400" height="300">
+
+        <!-- Mas o ideal para videos é usar a Tag videos -->
+        <video controls autoplay width="400" height="300">
+            <source src="https://www.youtube.com/watch?v=RZAD3eJtBNE">
+        </video>
+
+        <!-- Agora porque usar o Embed? para carregar de forma mais assincrona
+        Antigamente o site era carregado todo por completo, assim se voce tivesse um video grande, voce teria problemas de lentidão.
+        Agora se voce tem um video grande, primeiro vamos carregar os textos, depois o video...-->
+
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nostrum cum illum architecto earum, ea non incidunt cupiditate reiciendis rem asperiores deleniti, magnam nobis voluptates. Adipisci quibusdam dolor quo veniam.</span><span>Iusto ullam in deserunt vero error iure repellat consequatur, sapiente ea explicabo officiis illum cumque labore hic, at quisquam ipsam ratione! Iusto minus officiis accusantium iure minima, hic aperiam perspiciatis?</span><span>Aliquam suscipit maxime harum veritatis beatae deserunt, quasi quo culpa veniam maiores sed debitis architecto ratione? Alias eligendi recusandae voluptates aut dicta magni numquam modi corrupti dolore nesciunt! Maxime, quia.</span></p>
+
+    <!-- IFRAMES 
+     Com o ifremes podemos abrir outras paginas dentro da nossa pagina. 
+     Nesse exemplo a baixo vamos exibir o site da DIO dentro do nosso site.
+     Mas nem todos os sites funcionam, porque alguns sites travam para isso.-->
+
+     <iframe src="https://www.dio.me/" frameborder="0" width="600" height="200"></iframe>
+
+     <!-- Nessa segunda opcao pegamos o mapa do google em uma regiao
+      Clicamos em > COMPARTILHAR > INCORPORAR EM UM MAPA -->
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.621869272746!2d-43.05367580000001!3d-22.816471100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999aff2a6542d7%3A0xe969e71ec16d98a9!2sTv.%20Duarte%20Branco%2C%2026%20-%20Vila%20Iara%2C%20S%C3%A3o%20Gon%C3%A7alo%20-%20RJ%2C%2024440-590!5e0!3m2!1spt-BR!2sbr!4v1752584583614!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
