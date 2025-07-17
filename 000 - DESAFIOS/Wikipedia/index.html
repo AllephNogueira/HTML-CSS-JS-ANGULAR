@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineRadar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            padding: 2%;
+            display: flex; /* Dessa forma estou alinhando todos os itens na mesma linha */
+            border: solid rgb(192, 191, 191) 1px;
+        }
+        header input {
+            margin-left: 10%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .item {
+            border: solid rgb(192, 191, 191) 1px;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            padding: 1%;
+            
+        }
+
+        nav.item {
+            flex: 1;
+        }
+
+        section.item {
+            flex: 3;
+        }
+
+        aside.item{
+            flex: 1;
+        }
+
+        
+        .texto-alinhado {
+            margin: 0 auto;
+        }
+
+        div {
+            margin: auto;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+
+        }
+
+        div a {
+            padding: 10%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://pt.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" alt="Logo da Wikipedia" width="250">
+
+        <input type="text" placeholder="Digite o nome do seu filme"> 
+        <button>Buscar</button>
+    </header>
+
+    <br>
+
+    <main class="container">
+        <nav class="item">
+            <h2 class="texto-alinhado">Série de TV</h2>
+            <a href="#">The Walking Dead</a>
+        </nav>
+
+        <section class="item">
+            <h2>Tudo sobre The Walking Dead</h2>
+            <p>The Walking Dead é uma série de histórias em quadrinhos publicada nos Estados Unidos pela Image Comics de 8 de outubro de 2003 à 3 de julho de 2019. A história foi criada e escrita por Robert Kirkman e desenhada por Tony Moore, que foi substituído por Charlie Adlard a partir da edição número 7, mas Tony continuou a desenhar as capas até a edição número 24.[1][2] A série não teve grandes vendas durante seu lançamento, mas ganhou grande popularidade com o tempo. Em 2006, a primeira tiragem da trigésima terceira edição da série esgotou em apenas 24 horas. Em 2010, a série em quadrinhos foi adaptada como série de televisão pelo canal AMC, e no mesmo ano ganhou o prêmio Eisner Award de Melhor série contínua, anunciado na San Diego Comic-Con.[3]</p><br>
+
+            <h2 id="#sinopse">Sinopse</h2>
+
+            <p>A série é focada em um grupo de sobreviventes que lutam para superar o caos de um apocalipse de zumbis. Embora na realidade a causa do aparecimento dos zumbis não seja totalmente revelada, o enredo permite sentir o desenvolvimento humano e pessoal dos personagens e as formas de enfrentar o panorama de perseguição, destruição e morte causado pelos zumbis, conhecido pelos personagens como caminhantes, errantes, bichos ou mordedores, mas a palavra zumbi nunca é usada para descrevê-los. De acordo com Robert Kirkman, isso ocorre porque dentro do mundo de The Walking Dead não existiu filmes, quadrinhos, videogames, livros ou qualquer coisa do gênero mencionando a criatura zumbi.[4]</p>
+            <br>
+
+            <h2  id="premissa">Premissa</h2>
+
+            <p>The Walking Dead é centrado em Rick Grimes, um vice-xerife da Geórgia que é ferido durante um tiroteio e acaba em coma. Quando ele acorda, ele percebe que está em um mundo devastado por mortos-vivos que só desejam devorar todos os seres vivos que cruzam seu caminho. Sem saber o que aconteceu ao seu redor, Rick sai em busca de sua família. Em Atlanta, ele conhece um grupo de sobreviventes, que por coincidência inclui sua esposa e filho. Aos poucos ele assume o papel de líder do grupo e com o progresso da série, os personagens tornam-se mais desenvolvidos e suas personalidades são demonstradas sob a tensão de um apocalipse zumbi, especialmente a de Rick.</p>
+
+            <h2 id="#personagens">Personagens</h2>
+
+            <p>
+            Ver artigo principal: Lista de personagens de The Walking Dead (HQ)
+            Rick Grimes é o protagonista, um policial que está em coma quando o apocalipse zumbi começa. Com sua esposa Lori e filho Carl, ele se junta a grupos com outros sobreviventes. Entre alguns personagens notáveis da série estão: Shane, ex-melhor amigo de Rick que secretamente mantém uma relação sexual com Lori; Andrea e sua irmã Amy; Glenn, um entregador de pizza; Dale, um vendedor de carros; Carol e sua filha Sophia. Ao longo da história vão aparecendo mais personagens apresentando a narrativa de suas próprias histórias como Tyreese, Michonne e O Governador.
+            </p>
+
+        </section>
+
+        <aside class="item">
+            <h2>Neste Artigo</h2>
+            <div>
+                <a href="#sinopse">Sinopse</a>
+                <a href="#premissa">Premissa</a>
+                <a href="#personagens">Personagens</a>
+            </div>
+            
+
+        </aside>
+    </main>
+
+
+    
+
+</body>
+</html>
