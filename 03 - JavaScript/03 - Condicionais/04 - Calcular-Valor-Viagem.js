@@ -38,7 +38,7 @@ rl.question('Qual combustivel você vai usar?', (combustivel) => {
                         console.log(`GASTO TOTAIS: ${calculoTotal}`);
 
                         rl.close()
-                    })                    
+                    })
                 })
             })
         })
