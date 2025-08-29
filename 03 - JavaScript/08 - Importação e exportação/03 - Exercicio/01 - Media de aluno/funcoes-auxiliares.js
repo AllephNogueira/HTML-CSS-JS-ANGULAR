@@ -3,7 +3,7 @@ function gets (array){
     for (let index = 0; index < array.length; index++) {
         notaTotal += array[index];
     }
-    media = notaTotal / array.length
+    const media = notaTotal / array.length
     return media
 
 }
