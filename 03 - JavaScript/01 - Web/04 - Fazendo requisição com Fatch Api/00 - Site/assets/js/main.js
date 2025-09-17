@@ -13,6 +13,22 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}` 
 /** Then é um metodo que serve para encadear, ele vai retornar algo depois que a promisse estiver pronta.
  * Ele vai fazer algo depois que a promise tiver pronta.
  */
-fetch(url).then(function (response) {
-    console.log(response.json())
-})
+
+/** Resumo THEN E CATCH / FINAL 
+ * Se o fetch der certo, vamos apos ele esta pronto cair dentro do THEN
+ * Se o fetch der algo de errado, vamos cair dentro do catch
+ * Independente do que acontece, vamos cair no FINAL
+ */
+fetch(url)
+    .then(function (response) {
+        console.log(response)
+    }).catch(function (erro) {
+        console.log('Erro')
+        console.log(erro)
+    }).finally(function (final) {
+        console.log('Requisição concluida.')
+        console.log('Idependente da operação ter um sucesso ou falha ele cai aqui')
+        console.log(final)
+    })
+
+console.log('Sucesso')
