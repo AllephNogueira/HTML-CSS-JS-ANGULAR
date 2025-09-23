@@ -21,20 +21,20 @@ function converterPokemonParaHTML(pokemon) {
 
 const pokemonList = document.getElementsByClassName('pokemons')
 
+/** Vamos garantir que se a API não retonar nenhum pokemom, ela vai ser uma lista vazia por padrao. */
+pokeApi.getPokemons().then((listaPokemons = []) => {
 
-pokeApi.getPokemons().then((listaPokemons) => {
-    const listItems = []; // Lista vazia onde vamos adicionar todos os documentos HTML
 
-    for (let index = 0; index < listaPokemons.length; index++) {
-        const pokemon = listaPokemons[index];
-        listItems.push(converterPokemonParaHTML(pokemon))
+    /** Atenção
+     * Lembrar que se na arrow function tiver apenas um retorno e uma unica linha, podemos remover ele e nao precisamos das {}
+     */
+    const novaListaDePokemons = listaPokemons.map((pokemon) => converterPokemonParaHTML(pokemon)) // Aqui estamos retornando o HTML
+    
 
-        
+    const newHTML = novaListaDePokemons.join('') // Estamos juntando os dados
 
-    }
-    console.log(listItems)
-    pokemonList[0].innerHTML += listItems // Jogando toda a lista para dentro do HTML
+    pokemonList[0].innerHTML += newHTML // Juntando tudo no meu HTML
+
 })
 
-console.log('Sucesso')
 
