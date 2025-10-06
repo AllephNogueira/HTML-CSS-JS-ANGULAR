@@ -12,3 +12,15 @@ if(temperatura > 30) {
 
 const opcao = temperatura >= 30 ? 'Ir à praia' : 'Ficar em casa';
 console.log(opcao);
+
+// Agora fazendo um valor padrao
+// Repara que estamos usando um valor padrao 
+// Que no caso é "ficar em casa"
+// Vamos deixar sempre isso como se fosse uma segunda opcao se der errado o primeiro teste.
+
+// Agora vamos imaginar um caso real, o usuario não selecionou a temperatura la no site, então voltou um null
+// Com isso vamos deixar o ficar em casa como um padrao se nao deu certo o que ele selecinou.
+
+const temperatura2 = null
+const opcao2 = temperatura2 || 'Ficar em casa';
+console.log(opcao2)
