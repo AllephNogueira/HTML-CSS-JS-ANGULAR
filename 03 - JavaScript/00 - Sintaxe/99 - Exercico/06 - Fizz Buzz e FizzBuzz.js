@@ -11,14 +11,16 @@ function isDivisivel(numero) {
     if (typeof numero !== 'number') return numero;
 
     if (typeof numero === 'number') { // Checa para ver se é numero
-        if (numero >= 0 && numero <= 100) { // Diz que só pode ter numero ate 100
-            if (numero % 3 === 0 && numero % 5 === 0) return 'FizzBuzz'
-            else if (numero % 3 === 0) return 'Fizz'
-            else if (numero % 5 === 0) return 'Buzz'
-            else return numero
-        } else return 'Numero deve esta entre 0 e 100'
+        if (numero % 3 === 0 && numero % 5 === 0) return 'FizzBuzz'
+        else if (numero % 3 === 0) return 'Fizz'
+        else if (numero % 5 === 0) return 'Buzz'
+        else return numero
     }
 }
 
-console.log(isDivisivel(30))
+for (let i = 0; i <= 100; i++) {
+    console.log((i), isDivisivel(i))
+}
+
+
 
