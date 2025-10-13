@@ -5,7 +5,7 @@
 // Se NAO for divisivel por 3 e 5 = retorna o proprio numero - V
 // Se NAO for um numero retorna a propria entrada. - V
 // Checar se realmente é um numero - V
-// Usa a funcao com o numero de 0 a 100 : Só pode entrar numero de 0 a 100
+// Usa a funcao com o numero de 0 a 100 : Use um for para mandar de 0 ate 100 e ver todos os resultados.
 
 function isDivisivel(numero) {
     if (typeof numero !== 'number') return numero;
