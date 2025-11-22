@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Teste 223454</h1>
+    <button id="btnTeste" type="button">Exemplo</button>
+
+    <script>
+        /** O script colocamos sempre no final
+         * Porque primeiro ele vai intepretar o HTMl e CSS 
+         * E depois as funcionalidades 
+         * Dessa forma o site vai ficar mais rapido.*/
+
+         /** Document = vai ser sempre nosso documento, o H1, P.. */
+         /** Window vai ser nosso navegador */
+        const btnTeste = document.getElementById("btnTeste")
+        console.log(btnTeste)
+        console.log('Teste')
+
+        /** Fazendo algo quando o usuario clicar no botao 
+         * Quando for feito um clique, chame a função
+        */
+        btnTeste.addEventListener("click", function(){
+            alert('Botao clicado.')
+            document.getElementsByTagName('h1')[0].textContent = 'Botao clicado.'
+        })
+
+        
+    </script>
+    
+</body>
+</html>

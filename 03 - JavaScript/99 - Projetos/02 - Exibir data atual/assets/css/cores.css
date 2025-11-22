@@ -1,0 +1,26 @@
+.red {
+    background-color: red;
+}
+.laranja {
+    background-color: rgb(255, 102, 0);
+}
+
+.amarelo {
+    background-color: rgb(235, 212, 5);
+}
+
+.amarelo-verde {
+    background-color: rgb(201, 235, 5);
+}
+
+.verde {
+    background-color: rgb(13, 235, 5);
+}
+
+.abaixo-do-peso {
+    background-color: rgb(73, 73, 73);
+}
+
+.cinza {
+    background-color: rgb(70, 70, 70);
+}

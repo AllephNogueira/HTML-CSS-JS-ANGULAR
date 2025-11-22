@@ -1,0 +1,225 @@
+ html, body {
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        /* TOPO */
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .pesquisar {
+            display: flex;
+            align-items: stretch;
+            flex: 0 1 404px;
+        }
+
+        .pesquisar input {
+            flex: 1;
+            
+        }
+
+        .pesquisar button {
+            flex: 0 0 auto;
+        }
+
+
+        /* VIDEO */
+
+        main {
+            margin-top: 2rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            display: flex;
+            align-content: center;
+            align-items: stretch;
+            flex: 1;
+            gap: 0.5rem;
+            
+        }
+
+        .coluna1 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .coluna2 {
+            flex : 0 1 0;
+        }
+
+        .video > iframe {
+            
+            height: 500px;
+            width: 100%;
+            flex: 1 0  0;
+            margin: 0;
+        }
+
+        #nome-video {
+            margin: 0;
+            padding: 0;
+            line-height: 1.0;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+        }
+
+        .informacoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .item1 {
+            margin-left: 0.6rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .canal-nome {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #0f0f0f;
+            font-size: 16px;
+        }
+
+
+        /*
+        .btn-increvase{
+            background-color: black;
+            color: white;
+            width: 9.9rem;
+            height: 2.5rem;
+            padding: 0.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+            */
+
+        .item2{ 
+            margin-right: 0.6rem;
+            display: flex;
+            flex-direction: row; /* ← botões em linha */
+            gap: 1rem;
+
+        }
+
+        .quantidade-de-visualizacoes{
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .descricao-do-video{
+            font-weight: 400;
+            background-color: #f2f2f2;
+            padding: 1rem;
+            border-radius: 1rem;
+            
+        }
+
+
+
+
+        
+
+        
+
+
+
+        
+
+        
+
+        
+
+
+        /* 
+                main {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            gap: 0.5rem;
+            box-sizing: border-box;    
+            border: solid 1px red;
+
+        }
+
+        main > div:first-child {
+            /* Explicação dessa classe, onde crescemos o video 
+                Essa parte é um seletor CSS que diz:
+                - main: selecione o elemento <main>.
+                - >: selecione apenas os filhos diretos de <main>.
+                - div:first-child: selecione o primeiro <div> filho dentro de <main>
+                    flex-grow: 1;      Cresce para ocupar o espaço disponível 
+                    flex-shrink: 1;    Encolhe se necessário 
+                    flex-basis: 0;    Começa com base zero de largura 
+            
+            flex: 1;
+        }
+
+        main > div:last-child {
+            
+            /* Pegando o ultimo div.
+            Estamos dizendo que ele pode ter no maximo 20% 
+            
+            🔧 Opção 1: Usar flex-basis em vez de width
+                Troque width: 20% por:
+                main > div:last-child {
+                    flex: 0 0 20%;
+                }
+
+
+                Isso significa:
+                - flex-grow: 0: não cresce.
+                - flex-shrink: 0: não encolhe.
+                - flex-basis: 10%: largura base de 10%.
+                
+            flex: 0 0 5%;
+        }
+
+        .video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        /* Menu VIDEO 
+        #menu-video {
+            display: flex;
+            justify-content: space-between ;
+            border: solid 1px black;
+            
+        }
+
+        .item-coluna {
+            display: flex;
+            flex-direction: column;
+            border: solid 1px red;
+        }
+
+        .item-button-inscreva-se {
+            background-color: black;
+            color: white;
+            border-radius: 24px;
+        }
+
+        .item-button {
+            background-color: rgb(204, 204, 204);
+            color: white;
+            border-radius: 24px;
+        }
+*/

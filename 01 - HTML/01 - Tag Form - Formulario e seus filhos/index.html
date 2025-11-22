@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Preencha seus dados.</h1>
+
+    <!-- name === nome do nosso formulario 
+        Porque da um nome para o formulario?
+        Porque no nosso site pode ou nao ter varios Formularios
+        E quando a gente precisar recuperar esses dados, vamos acessar primeiro o forumulario
+        Depois os campos que esta dentro deles.
+        
+        action === Para onde esse formulario deve ir?
+        Aqui passamos para onde o formulario deve ir.
+        
+        method === o metodo que vamos enviar
+        Atençao sem isso aqui, ele vai enviar pela URL
+        https://wwww.allephnogueira.com.br/cadastro?name=alleph&age=12&password=1545445
+        Ficando muito inseguro
+        Fazendo com metodo ele vai enviar por requisição para o servidor, fazendo ficar muito mais seguro
+        Agora com o metodo post
+        https://wwww.allephnogueira.com.br/cadastro
+        Isso apos clicar no botao enviar.
+
+        autocomplet ofF/ON === quando voce enviar os dados, o navegador vai perguntar
+        Se voce quer deixar guardado esses dados, e quando voce voltar de novo
+        vai esta salvo, seu nome vai esta preenchido...
+        Mas, no caso do OFF estamos falando para nao fazer isso.
+
+        (EVENTOS)
+        Tudo que começa com o ON é um evento
+        onSummit é um evento que quando o usuario clicar em enviar, vai exibir esse alerta
+        
+        Resumindo o form vai encpsular essas informações e vai mandar.-->
+    <form name="cadastro" action="https://wwww.allephnogueira.com.br/cadastro" method="post" autocomplete="off" onsubmit="alert('Formulario enviado')">
+        <!-- nome === Apenas um texto comum exibido na pagina
+             input === Estamos dizendo que vai entrar algo
+             type === Tipo de entrada de dados
+             name === Aqui é o nome do campo e que vamos precisar para identificar o valor digitado -->
+        
+        Nome: <input type="text" name="name">  
+        Idade: <input type="number" name="age"> 
+        Senha: <input type="password" name="password">
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
