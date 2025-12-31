@@ -15,9 +15,17 @@ const usuario = {
 
 
 
-console.log(usuario) // IMPRIMIR TODO O OBJETO
+console.log(usuario) // IMPRIMIR TODOO O OBJETO
 console.log(usuario.nome) // IMPRIMIR SOMENTE O NOME
 console.log(usuario.idade) // SOMENTE IDADE
+
+// Outra forma de acessar
+console.log(usuario['nome'])
+
+// Imagina que vem do banco de dados a informacao
+const vindoDoBanco = 'idade'
+// Acessando com informacao dinamica
+console.log(usuario[vindoDoBanco]) // Repara que assim estamos acessando o objeto de forma dinamica.
 
 // Podemos adicionar mais valores e remover também
     // Adicionando novo valor
